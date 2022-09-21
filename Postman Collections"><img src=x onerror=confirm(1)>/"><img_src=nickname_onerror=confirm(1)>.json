@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "98424adc-fd18-41cd-86bf-e84f50a2bd12",
+		"name": "test\"><img src=y onerror=confirm(1)>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Health",
+			"_postman_id": "b00ce580-19e6-4fb7-9338-6da3ef5105dc",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": "{{baseUrl}}/sys/health",
+				"description": "Provides an indication about the health of the API"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"_postman_id": "3b1077dc-cbb2-455c-ab09-522dcbc3a2bc",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"customerId\": \"cupidatat\",\n \"customerName\": \"irure veniam labore aute sed\",\n \"orderDate\": \"1994-08-09\",\n \"items\": [\n  {\n   \"itemId\": \"veniam nisi Lorem officia\",\n   \"qty\": 24279723.498080447,\n   \"uom\": \"aute ex anim proident\",\n   \"itemDescription\": \"quis in aute\"\n  }\n ],\n \"customerEmail\": \"tempor nisi eiusmo\",\n \"orderReference\": \"veniam esse ea\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/order",
+				"description": "Post a new order"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Order",
+			"_postman_id": "9a0396dd-1bf1-4f7a-823b-851276ba4f01",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/order"
+			},
+			"response": []
+		},
+		{
+			"name": "Your GET endpoint",
+			"_postman_id": "b74e8373-f7f4-4ee2-b30e-87b60c66b8cb",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/order/:id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"order",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "in consectetur aliquip",
+							"description": "(Required) ",
+							"type": "string"
+						}
+					]
+				},
+				"description": "Your GET endpoint"
+			},
+			"response": [
+				{
+					"id": "f7e34962-c250-466f-9571-362dc6caf998",
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "apikey",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/order/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"order",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "in consectetur aliquip",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"enabled": true
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"CustomerId\": \"string\",\n  \"CustomerName\": \"string\",\n  \"CustomerEmail\": \"string\",\n  \"OrderReference\": \"string\",\n  \"OrderDate\": \"string\",\n  \"Items\": [\n    {\n      \"ItemId\": 0,\n      \"ItemDescription\": \"string\",\n      \"Qty\": 0,\n      \"UOM\": \"string\"\n    }\n  ]\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "0b8e194b-f308-4ced-9b88-c278d374d72b",
+			"key": "url",
+			"value": "https://1fed947f-611d-493b-9c03-11cfeac1b865.mock.pstmn.io",
+			"type": "string"
+		},
+		{
+			"id": "83bfa5d8-3e59-4dab-928e-940e9c1c11f7",
+			"key": "baseUrl",
+			"value": "https://api-tst.atlascopco.group/shared/co/contosoorders/v1",
+			"type": "string"
+		}
+	]
+}
