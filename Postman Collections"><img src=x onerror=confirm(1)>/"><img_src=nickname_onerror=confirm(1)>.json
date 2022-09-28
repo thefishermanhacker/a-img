@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "Get Health",
-			"_postman_id": "b00ce580-19e6-4fb7-9338-6da3ef5105dc",
+			"id": "b00ce580-19e6-4fb7-9338-6da3ef5105dc",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "Create Order",
-			"_postman_id": "3b1077dc-cbb2-455c-ab09-522dcbc3a2bc",
+			"id": "3b1077dc-cbb2-455c-ab09-522dcbc3a2bc",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -48,7 +48,7 @@
 		},
 		{
 			"name": "Get Order",
-			"_postman_id": "9a0396dd-1bf1-4f7a-823b-851276ba4f01",
+			"id": "9a0396dd-1bf1-4f7a-823b-851276ba4f01",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -76,7 +76,7 @@
 		},
 		{
 			"name": "Your GET endpoint",
-			"_postman_id": "b74e8373-f7f4-4ee2-b30e-87b60c66b8cb",
+			"id": "b74e8373-f7f4-4ee2-b30e-87b60c66b8cb",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -98,8 +98,7 @@
 						{
 							"key": "id",
 							"value": "in consectetur aliquip",
-							"description": "(Required) ",
-							"type": "string"
+							"description": "(Required) "
 						}
 					]
 				},
@@ -151,20 +150,116 @@
 					"body": "{\n  \"CustomerId\": \"string\",\n  \"CustomerName\": \"string\",\n  \"CustomerEmail\": \"string\",\n  \"OrderReference\": \"string\",\n  \"OrderDate\": \"string\",\n  \"Items\": [\n    {\n      \"ItemId\": 0,\n      \"ItemDescription\": \"string\",\n      \"Qty\": 0,\n      \"UOM\": \"string\"\n    }\n  ]\n}"
 				}
 			]
+		},
+		{
+			"name": "https://salt-research.postman.co/_api/ws/proxy",
+			"id": "b4f886ce-d9d9-40b7-b144-768d87a9122c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "salt-research.postman.co"
+					},
+					{
+						"key": "Content-Length",
+						"value": "234"
+					},
+					{
+						"key": "Sec-Ch-Ua",
+						"value": "\"Google Chrome\";v=\"105\", \"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"105\""
+					},
+					{
+						"key": "X-App-Version",
+						"value": "9.31.11-220920-1616"
+					},
+					{
+						"key": "Tracestate",
+						"value": "2665918@nr=0-1-2665918-771436762-d2b3cca4b2e0b176----1663767985488"
+					},
+					{
+						"key": "Traceparent",
+						"value": "00-7b4fc97fe4955e046316ecb7b4da68db-d2b3cca4b2e0b176-01"
+					},
+					{
+						"key": "Sec-Ch-Ua-Mobile",
+						"value": "?0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Sec-Ch-Ua-Platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "X-Entity-Team-Id",
+						"value": "1181252"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Origin",
+						"value": "https://salt-research.postman.co"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Referer",
+						"value": "https://salt-research.postman.co/workspace/test%22%3E%3Cimg-src%3Dy-onerror%3Dconfir~6ad454d1-6075-4078-819e-a227ee27c6d2/api/9c5cc58c-3f32-4278-835a-151728a1a7fc/version/21a4da79-8d0b-4057-b6dd-886201b0ee0c/integrations/ci/add?rule=jenkins_ci&service=jenkins"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "Connection",
+						"value": "close"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"service\":\"integrations\",\"method\":\"post\",\"path\":\"/integration/actions\",\"body\":{\"type\":\"handleActions\",\"action\":\"validateUser\",\"rule\":\"jenkins_ci\",\"host_url\":\"http://127.0.0.1:9090\",\"username\":\"test22\",\"auth_token\":\"123412422222www\"}}"
+				},
+				"url": "https://salt-research.postman.co/_api/ws/proxy"
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "0b8e194b-f308-4ced-9b88-c278d374d72b",
+			"id": "ee344758-138a-4a22-a860-a0560103bd46",
 			"key": "url",
-			"value": "https://1fed947f-611d-493b-9c03-11cfeac1b865.mock.pstmn.io",
-			"type": "string"
+			"value": "https://1fed947f-611d-493b-9c03-11cfeac1b865.mock.pstmn.io"
 		},
 		{
-			"id": "83bfa5d8-3e59-4dab-928e-940e9c1c11f7",
+			"id": "fadf792c-a582-4df1-8cb4-939eb3ecda44",
 			"key": "baseUrl",
-			"value": "https://api-tst.atlascopco.group/shared/co/contosoorders/v1",
-			"type": "string"
+			"value": "https://api-tst.atlascopco.group/shared/co/contosoorders/v1"
 		}
 	]
 }
