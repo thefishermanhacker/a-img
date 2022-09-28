@@ -243,7 +243,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"service\":\"integrations\",\"method\":\"post\",\"path\":\"/integration/actions\",\"body\":{\"type\":\"handleActions\",\"action\":\"validateUser\",\"rule\":\"jenkins_ci\",\"host_url\":\"http://127.0.0.1:9090\",\"username\":\"test22\",\"auth_token\":\"123412422222www\"}}"
+					"raw": "{\n    \"service\": \"integrations\",\n    \"method\": \"post\",\n    \"path\": \"/integration/actions\",\n    \"body\": {\n        \"type\": \"handleActions\",\n        \"action\": \"validateUser\",\n        \"rule\": \"jenkins_ci\",\n        \"host_url\": \"http://127.0.0.1:9090\",\n        \"username\": \"test22\",\n        \"auth_token\": \"123412422222www\"\n    }\n}"
 				},
 				"url": "https://salt-research.postman.co/_api/ws/proxy"
 			},
@@ -252,12 +252,12 @@
 	],
 	"variable": [
 		{
-			"id": "ee344758-138a-4a22-a860-a0560103bd46",
+			"id": "b77ace0c-9d7f-47eb-9213-b8d67d39e48a",
 			"key": "url",
 			"value": "https://1fed947f-611d-493b-9c03-11cfeac1b865.mock.pstmn.io"
 		},
 		{
-			"id": "fadf792c-a582-4df1-8cb4-939eb3ecda44",
+			"id": "17fd21b8-13ef-41d5-be5c-eab665abebde",
 			"key": "baseUrl",
 			"value": "https://api-tst.atlascopco.group/shared/co/contosoorders/v1"
 		}
