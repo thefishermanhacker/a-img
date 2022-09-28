@@ -252,12 +252,12 @@
 	],
 	"variable": [
 		{
-			"id": "b77ace0c-9d7f-47eb-9213-b8d67d39e48a",
+			"id": "9d699593-7ac5-42ec-9ebe-8097387db5d3",
 			"key": "url",
 			"value": "https://1fed947f-611d-493b-9c03-11cfeac1b865.mock.pstmn.io"
 		},
 		{
-			"id": "17fd21b8-13ef-41d5-be5c-eab665abebde",
+			"id": "4f22256c-733f-4abb-9fee-22e5bcff0532",
 			"key": "baseUrl",
 			"value": "https://api-tst.atlascopco.group/shared/co/contosoorders/v1"
 		}
